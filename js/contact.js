@@ -1,0 +1,77 @@
+// Custom cursor script
+const customCursor = document.getElementById('customCursor');
+
+document.addEventListener('mousemove', function (e) {
+    requestAnimationFrame(function () {
+        customCursor.style.transform = `translate(${e.clientX - 15}px, ${e.clientY - 15}px)`;
+    });
+});
+
+
+//Menu Bar
+
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menuCloseBtn = document.querySelector('.menu-close-btn');
+    const menuBarWrapper = document.querySelector('.menu-bar-wrapper');
+
+    // Open menu bar
+    menuToggle.addEventListener('click', function () {
+        menuBarWrapper.classList.add('menu-bar-wrapper-active');
+    });
+
+    // Close menu bar
+    menuCloseBtn.addEventListener('click', function () {
+        menuBarWrapper.classList.remove('menu-bar-wrapper-active');
+    });
+});
+
+//coutry Change
+
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdownItems = document.querySelectorAll('.dropdown-item');
+    const numberInput = document.querySelector('.number-input');
+    const dropdownButtonImg = document.querySelector('.dropdown-toggle img');
+
+    dropdownItems.forEach(item => {
+        item.addEventListener('click', function(event) {
+            event.preventDefault();
+            const prefix = this.getAttribute('data-prefix');
+            const flagSrc = this.getAttribute('data-flag');
+
+            numberInput.value = prefix;
+            dropdownButtonImg.src = flagSrc;
+        });
+    });
+});
+
+//Textarea Count
+document.addEventListener('DOMContentLoaded', function() {
+    const textarea = document.getElementById('message');
+    const charCount = document.getElementById('char-count');
+
+    textarea.addEventListener('input', function() {
+        const currentLength = textarea.value.length;
+        charCount.textContent = `${currentLength}/1000`;
+    });
+});
+//Mobile navbar animation
+document.addEventListener('DOMContentLoaded', function () {
+    var offcanvasElement = document.getElementById('menu_ofcanvas');
+    var navItems = document.querySelectorAll('.nav-item');
+    var priceCalculatorBtn = document.querySelector('.price-calculator-btn');
+
+    offcanvasElement.addEventListener('show.bs.offcanvas', function () {
+        navItems.forEach(function (item) {
+            item.classList.add('animated');
+        });
+        priceCalculatorBtn.classList.add('animated');
+    });
+
+    offcanvasElement.addEventListener('hidden.bs.offcanvas', function () {
+        navItems.forEach(function (item) {
+            item.classList.remove('animated');
+        });
+        priceCalculatorBtn.classList.remove('animated');
+    });
+});

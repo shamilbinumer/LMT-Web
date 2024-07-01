@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  font-family: Montserrat;
+}
+html{
+  scroll-behavior: smooth !important;
+}
+.nav-left{
+  position: relative;
+  height: 100px;
+  width: 150px;
+}
+.logo-image {
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  left: 0;
+  width: 100%;
+  /* height: 100%; */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.logo-image-2 {
+  opacity: 0;
+}
+
+.nav-left:hover .logo-image-2 {
+  opacity: 1;
+}
+
+.nav-left:hover .logo-image-1 {
+  opacity: 0;
+}
+/* #logo-image:hover {
+  transition: .5s ease-in-out !important;
+  content: url(../Images/lamp-media-tech-logo_2.svg);
+} */
+
+
+/* --------------------mobile-navbar-------------------- */
+.mobile-header {
+  display: none;
+}
+
+
+.off_canvas_nav_items{
+  text-align: center;
+}
+.mob-nav-link{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.236) !important;
+  padding: 15px 10px;
+}
+.mob-nav-link a{
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  font-size: 17px;
+  transition: .3s;
+}
+.offcanvas{
+  background-color: var(--main-bg-color) !important;
+}
+
+@keyframes fadeInLeft {
+  0% {
+      opacity: 0;
+      transform: translateX(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.nav-item, .price-calculator-btn {
+  opacity: 0;
+}
+
+.nav-item.animated {
+  animation: fadeInLeft 0.5s forwards;
+}
+
+.price-calculator-btn.animated {
+  animation: fadeInUp 0.5s forwards;
+}
+
+.off_canvas_nav_items .mob-nav-link:nth-child(1) .nav-item.animated {
+  animation-delay: 0.1s;
+}
+.off_canvas_nav_items .mob-nav-link:nth-child(2) .nav-item.animated {
+  animation-delay: 0.2s;
+}
+.off_canvas_nav_items .mob-nav-link:nth-child(3) .nav-item.animated {
+  animation-delay: 0.3s;
+}
+.off_canvas_nav_items .mob-nav-link:nth-child(4) .nav-item.animated {
+  animation-delay: 0.4s;
+}
+.off_canvas_nav_items .mob-nav-link:nth-child(5) .nav-item.animated {
+  animation-delay: 0.5s;
+}
+.off_canvas_nav_items .mob-nav-link:nth-child(6) .nav-item.animated {
+  animation-delay: 0.6s;
+}
+.off_canvas_nav_items .mob-nav-link:nth-child(7) .nav-item.animated {
+  animation-delay: 0.7s;
+}
+.off_canvas_nav_items .mob-nav-link:nth-child(8) .nav-item.animated {
+  animation-delay: 0.8s;
+}
+.price-calculator-btn.animated {
+  animation-delay: 0.9s;
+}
+@media(max-width:1320px) {
+  .navigation-bar {
+      display: none;
+  }
+  .mobile-header{
+    position: fixed;
+    top: 0;
+    display: flex !important;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #151515 !important;
+    /* backdrop-filter: blur(20px); */
+    width: 100%;
+    z-index: 8;
+  }
+ 
+  
+}
+
+/* --------------------mobile-navbar-------------------- */
+
+.custom-cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--yellow);
+  pointer-events: none;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+  transition: transform .5s ease-out;
+}
+
+.custom-cursor .dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: var(--yellow);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s ease-out;
+}
+@media(max-width:1199px){
+  .custom-cursor {
+    display: none;
+  }
+}
+:root {
+  --main-bg-color: #151515;
+  --yellow: #eaa110;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--main-bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--yellow);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* --------------------------------------footer------------------------------- */
+.footer-main {
+  z-index: 3;
+  position: relative;
+  padding: 3rem 10rem;
+  background-color: rgb(243, 243, 243);
+  font-family: "Montserrat", sans-serif;
+ 
+}
+
+.footer-main h3 {
+  font-size: 19px;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.footer-link-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-link-main a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+}
+
+.footer-right {
+  padding-left: 2rem;
+}
+
+@media(max-width:768px) {
+  .footer-main {
+      text-align: center;
+      padding: 1.4rem;
+  }
+
+  .footer-main h3 {
+      margin-top: 2rem;
+  }
+  .footer-link-main {
+    gap: .1rem;
+  }
+  .footer-link-main a {
+    font-size: 12px;
+  }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+  .footer-main {
+      text-align: center;
+      padding: 1.4rem;
+  }
+
+  .footer-main h3 {
+      margin-top: 2rem;
+  }
+  .footer-link-main {
+    gap: .1rem;
+  }
+  .footer-link-main a {
+    font-size: 12px;
+  }
+}
+@media(min-width:991px) and (max-width:1199px) {
+  .footer-main {
+      padding: 1.4rem;
+  }
+
+  .footer-main h3 {
+    font-size: 15px;
+      margin-top: 2rem;
+  }
+  .footer-link-main {
+    gap: .2rem;
+  }
+  .footer-link-main a {
+    font-size: 12px;
+  }
+}
+
+/* --------------------------------------footer------------------------------- */
+/* ----------------------------------------copy-right-section------------------------------- */
+.copy-right-section {
+  z-index: 3;
+  position: relative;
+  padding: 1.3rem 10rem;
+  /* height: 300px; */
+  background-color: var(--main-bg-color);
+}
+
+.cpy-logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+
+.scoial-icon {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.scoial-icon img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.cpy-text-main {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cpy-text-right {
+  display: flex;
+  gap: 2rem;
+}
+
+.cpy-text-main span {
+  color: white;
+  font-size: 20px;
+}
+
+@media(max-width:768px) {
+  .copy-right-section {
+      padding: 1.3rem;
+  }
+
+  .cpy-logo-wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-bottom: 1rem;
+  }
+
+  .logo img {
+      width: 100px;
+  }
+
+  .scoial-icon img {
+      width: 15px;
+      height: 15px;
+  }
+
+  .cpy-text-main {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .cpy-text-main span {
+      color: white;
+      font-size: 14px;
+
+      margin-bottom: 1rem;
+  }
+}
+
+/* ----------------------------------------copy-right-section------------------------------- */

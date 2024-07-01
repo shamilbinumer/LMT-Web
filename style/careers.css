@@ -1,0 +1,405 @@
+/* --------------------------navbar---------------------- */
+.mobile-header {
+    display: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* -----------------------------mobile------------------------ */
+
+/* ---------------------------menu-bar-------------------------- */
+.menu-bar-wrapper {
+    width: 100%;
+    height: 500px;
+    background-color: var(--main-bg-color);
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+    padding: 2rem 3rem;
+    display: none;
+    animation: fadeTopToBottom .5s ease;
+    /* Apply animation to menu bar */
+}
+
+@keyframes fadeTopToBottom {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.menu-bar-wrapper-active {
+    display: block;
+    /* Display the menu bar when active */
+}
+
+@keyframes fadeBottomToTop {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+.menu-close-btn {
+    position: absolute;
+    width: 40px;
+    top: 5%;
+    right: 2%;
+    cursor: pointer;
+}
+
+.menu-left {
+    padding-left: 2rem !important;
+}
+
+.menu-left h1 {
+    top: 10%;
+    padding-left: 5px;
+    position: absolute;
+    font-weight: 300;
+    line-height: 55.83px;
+    text-align: left;
+    color: #ffff;
+}
+
+.menu-left button {
+    background-color: transparent;
+    border: none;
+    color: #F6921E;
+    font-weight: 300;
+    line-height: 21.94px;
+    margin-top: 20rem;
+}
+
+.umbrella-image {
+    position: absolute;
+    width: 300px;
+    left: 8%;
+    bottom: 10% !important;
+}
+
+.menu-center-left {
+    padding-left: 4rem !important;
+}
+
+.menu-section h2 {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 34px;
+    color: #ffff;
+}
+
+.menu-section a {
+    text-decoration: none;
+    color: #ffff;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 24px;
+    transition: .4s;
+}
+
+.menu-section a:hover {
+    letter-spacing: 1px;
+}
+
+.menu-bar-black-Arrow {
+    width: 140px;
+    position: absolute;
+    right: 2%;
+    bottom: 6%;
+}
+
+/* ---------------------------menu-bar-------------------------- */
+/* -----------------------------mobile------------------------ */
+.navigation-bar {
+    width: 100% !important;
+    height: 100px;
+    padding: 0 4rem 0 4rem;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    background-color: transparent;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 101;
+    /* Ensure this is higher than other elements */
+    transition: .3s;
+}
+
+.active-nav {
+    color: var(--yellow) !important;
+}
+
+.nav-right .nav-items {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: .3s;
+    font-size: 15px;
+}
+
+.nav-items a:hover {
+    color: var(--yellow);
+}
+
+.nav-items button {
+    width: 170px;
+    background-color: var(--yellow);
+    border: 1px solid var(--yellow);
+    color: white;
+    font-weight: 300;
+    transition: .3s;
+    letter-spacing: 1px;
+}
+
+.nav-items button:hover {
+    background-color: transparent;
+}
+
+.nav-left img {
+    width: 50px;
+}
+
+.scrolled {
+    background-color: var(--main-bg-color);
+}
+
+/* --------------------------navbar---------------------- */
+/* ---------------------------hero------------------------- */
+.hero-section {
+    background-color: var(--main-bg-color);
+    height: 500px;
+    overflow: hidden;
+    width: 100%;
+    /* transition: transform 0.1s ease-out; */
+    z-index: 1;
+}
+
+.hero-content {
+    padding-top: 12%;
+    padding-left: 7rem;
+}
+
+.hero-heading {
+    color: white;
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+
+.hero-para {
+    color: white;
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 2rem;
+    letter-spacing: 1px;
+}
+
+@media(max-width:576px) {
+    .hero-section {
+        height: 60vh !important;
+    }
+
+    .hero-content {
+        padding-top: 9rem !important;
+        padding: 1rem;
+    }
+    .hero-heading {
+        font-size: 30px;
+        text-align: center;
+    }
+    
+.hero-para {
+    font-size: 20px;
+    text-align: center;
+}
+}
+@media(min-width:576px) and (max-width:991px) {
+    .hero-section {
+        height: 50vh !important;
+    }
+
+    .hero-content {
+        padding-top: 9rem !important;
+        padding: 1rem;
+    }
+    .hero-heading {
+        font-size: 50px;
+        text-align: center;
+    }
+    
+.hero-para {
+    font-size: 30px;
+    text-align: center;
+}
+}
+
+/* ---------------------------hero------------------------- */
+/* ----------------------------careers-second-section--------------------- */
+.careers-second-section {
+    width: 100%;
+    padding: 4rem;
+    overflow: hidden;
+    z-index: 1;
+    /* Ensure this is lower than the navbar */
+    position: relative;
+    background-color: white;
+    /* height: 100vh; */
+}
+
+.sec-section-bg-image {
+    background-image: url('../Images/working2.jpg');
+    height: 700px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.second-section-right h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #F6921E;
+}
+
+.second-section-right h1 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.benefit-card-wrapper {
+    padding-top: 2rem;
+}
+
+.benefit-card {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    /* transition: .7s !important; */
+    padding: 0 10px 5px;
+    border-radius: 6px;
+}
+
+.benefit-card:hover {
+    background-color: rgb(242, 242, 242);
+}
+
+.benefit-card .count {
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(188, 188, 188);
+}
+
+.benefit-card .benefit-heading {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0 !important;
+}
+
+.benefit-card .benefit-para {
+    font-size: 14px;
+    margin-bottom: 0 !important;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.second-section-right h2 {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.globel-details {
+    padding: 2rem 14rem;
+    overflow: hidden;
+}
+
+.globel-details h1 {
+    float: right;
+    margin-top: 0 !important;
+}
+
+.globel-details p {
+    font-size: 25px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+@media(max-width:576px) {
+    .careers-second-section {
+        padding: 1rem;
+    }
+    .second-section-right h4 {
+        font-size: 15px;
+    }
+    
+    .second-section-right h1 {
+        font-size: 25px;
+    }
+    
+    .sec-section-bg-image {
+        display: none;
+    }
+
+    .globel-details {
+        padding: 2rem;
+        overflow: hidden;
+    }
+    .globel-details h1 {
+        float: left;
+      font-size: 20px;
+    }
+    
+    .globel-details p {
+        font-size: 15px;
+    }
+}
+@media(min-width:576px) and (max-width:991px) {
+    .careers-second-section {
+        padding: 1rem;
+    }
+    .second-section-right h4 {
+        font-size: 20px;
+    }
+    
+    .second-section-right h1 {
+        font-size: 35px;
+    }
+    
+    .sec-section-bg-image {
+        display: none;
+    }
+
+    .globel-details {
+        padding: 2rem;
+        overflow: hidden;
+    }
+    .globel-details h1 {
+        float: left;
+      font-size: 30px;
+    }
+    
+    .globel-details p {
+        font-size: 25px;
+    }
+}
+
+
+/* ----------------------------careers-second-section--------------------- */

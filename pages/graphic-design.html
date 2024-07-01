@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Details</title>
+    <link rel="icon" type="image/x-icon" href="../Images/Logo.png">
+    <link rel="stylesheet" href="../style/graphic-design.css">
+    <link rel="stylesheet" href="../style/common.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="custom-cursor" id="customCursor">
+        <div class="dot"></div>
+    </div>
+
+    <!-- -------------------------------mobile-header------------------------ -->
+    <div class="mobile-header">
+        <a href="../index.html"> <img src="../Images/Logo.png" alt="" class="mobile-logo" style="width: 40px;height: 40px;"></a>
+        <img src="../Images/menu-bar.png" alt="" class="mobile-burger-bar" style="width: 40px;height: 40px;"
+            data-bs-toggle="offcanvas" href="#menu_ofcanvas" role="button" aria-controls="offcanvasExample">
+</div>
+<div class="offcanvas offcanvas-top" tabindex="-1" id="menu_ofcanvas"
+style="background-color: transparent; backdrop-filter: blur(30px); height: 100vh;">
+<div class="offcanvas-header" style="display: flex; justify-content: space-between;">
+    <a href="../index.html"><img src="../Images/Logo.png" style="width: 35px;" alt=""></a>
+    <img src="../Images/close.png" data-bs-dismiss="offcanvas" aria-label="Close"
+        style="width: 25px; border: 1px solid #EAA110; border-radius: 50%; padding: 4px;" alt="">
+</div>
+<div class="offcanvas-body" style="z-index: 9;">
+    <div class="off_canvas_nav_items">
+        <div class="mob-nav-link"><a href="../pages/service.html" class="nav-item">Services</a></div>
+        <div class="mob-nav-link"><a href="" class="nav-item">Solutions</a></div>
+        <div class="mob-nav-link"><a href="./products.html" class="nav-item">Products</a></div>
+        <div class="mob-nav-link"><a href="./IT-services.html" class="nav-item">IT Services</a></div>
+        <div class="mob-nav-link"><a href="./works.html" class="nav-item">Works</a></div>
+        <div class="mob-nav-link"><a href="./about.html" class="nav-item">About</a></div>
+        <div class="mob-nav-link"><a href="./careers.html" class="nav-item">Careers</a></div>
+        <div class="mob-nav-link"><a href="./blog.html" class="nav-item">Blog</a></div>
+        <div class="mob-nav-link"><a href="./contact.html" class="nav-item">Contact</a></div>
+        <button class="price-calculator-btn"
+            style="background-color: #EAA110;color: white;border: 1px solid #EAA110;font-weight: 300;font-size: 20px;padding:1px 10px;margin-top: 20px;">Price
+            Calculator</button>
+    </div>
+</div>
+</div>
+    <!-- -------------------------------mobile-header------------------------ -->
+    <!-- ---------------------------------menu-bar---------------------------- -->
+    <div class="menu-bar-wrapper">
+        <img src="../Images/menu-close.png" alt="" class="menu-close-btn">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 menu-section menu-left">
+                    <img src="../Images/menu-bar-umbrella.svg" alt="" class="umbrella-image">
+                    <div class="menu-left-content">
+                        <h1>Engage <br>
+                            with customers <br>
+                            to understand <br>
+                            their digital <br>
+                            needs</h1>
+                        <button>Go to Overview <img src="../Images/Arrow.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="col-lg-3 menu-section menu-center-left">
+                    <h2>Branding <img src="../Images/menu-Right-Arrow.svg" alt=""></h2>
+                    <div><a href="">Brand Consulting</a></div>
+                    <div><a href="">Logo Design</a></div>
+                    <div><a href="">Industrial / Product Design</a></div>
+                    <div><a href="">Graphic Design</a></div>
+                    <div><a href="">2D / 3D Visualisation</a></div>
+                    <h2 style="margin-top: 1rem;">Experience Design <img src="../Images/menu-Right-Arrow.svg" alt="">
+                    </h2>
+                    <div><a href="">UI/UX Design</a></div>
+                    <div><a href="">Website Design</a></div>
+                    <div><a href="">Mobile Experience</a></div>
+                    <div><a href="">eCommerce Experience</a></div>
+                    <div><a href="">Human Machine Interface</a></div>
+                </div>
+                <div class="col-lg-3 menu-section" style="padding-left: 2.5rem;">
+                    <h2>Technology <img src="../Images/menu-Right-Arrow.svg" alt=""></h2>
+                    <div><a href="">AI & Machine Learning</a></div>
+                    <div><a href="">DevOps Consulting</a></div>
+                    <div><a href="">Data & Analytics</a></div>
+                    <div><a href="">Web Development</a></div>
+                    <div><a href="">Mobile App Development</a></div>
+                    <div><a href="">E-commerce</a></div>
+                    <div><a href="">Cloud Based Software</a></div>
+                    <div><a href="">Cloud Based Software</a></div>
+                    <h2 style="margin-top: 1rem;">Infrastructure <img src="../Images/menu-Right-Arrow.svg" alt=""></h2>
+                    <div><a href="">Email & Data</a></div>
+                    <div><a href="">Server Virtualization</a></div>
+                    <div><a href="">Cloud Services</a></div>
+                    <div><a href="">Cyber Security</a></div>
+                    <div><a href="">IT Support & Consultancy </a></div>
+                </div>
+                <div class="col-lg-3 menu-section">
+                    <h2>Digital Marketing <img src="../Images/menu-Right-Arrow.svg" alt=""></h2>
+                    <div><a href="">Search Engine Optimisation</a></div>
+                    <div><a href="">Social Media Management</a></div>
+                    <div><a href="">Performance Marketing</a></div>
+                    <div><a href="">Content Marketing</a></div>
+                    <div><a href="">Marketing Automation</a></div>
+                    <div><a href="">Analytics</a></div>
+                    <h2 style="margin-top: 1rem;">Production <img src="../Images/menu-Right-Arrow.svg" alt=""></h2>
+                    <div><a href="">Photography & Videography</a></div>
+                    <div><a href="">Printing & Signage</a></div>
+                    <div><a href="">Exhibition Stand</a></div>
+                    <div><a href="">Corporate Gifts</a></div>
+                    <div><a href="">Content Writing </a></div>
+                </div>
+            </div>
+        </div>
+        <img src="../Images/menu-bar-black-Arrow-BG.svg" alt="" class="menu-bar-black-Arrow">
+    </div>
+    <!-- ---------------------------------menu-bar---------------------------- -->
+    <!-- --------------------------------hero----------------------------- -->
+    <div class="hero-section">
+        <nav class="navigation-bar" id="navbar">
+            <div class="nav-left">
+                <a href="../index.html"> <img src="../Images/Logo.png" class="logo-image logo-image-1"
+                    alt="Original Logo"></a>
+            <a href="../index.html"> <img src="../Images/lamp-media-tech-logo_2.svg" class="logo-image logo-image-2"
+                    alt="New Logo"></a>
+            </div>
+            <div class="nav-right">
+                <div class="nav-items">
+                    <div><a href="./service.html">Services</a></div>
+                    <div><a href="">Solutions</a></div>
+                    <div><a href="./products.html">Products</a></div>
+                    <div><a href="./IT-services.html">IT Services</a></div>
+                    <div><a href="./works.html">Works</a></div>
+                    <div><a href="./about.html">About</a></div>
+                    <div><a href="./careers.html">Careers</a></div>
+                    <div><a href="./blog.html">Blog</a></div>
+                    <div><a href=".contact.html">Contact</a></div>
+                    <div><button>Price Calculator</button></div>
+                    <div><img src="../Images/Burger Menu.png" class="menu-toggle" style="cursor: pointer;padding: 10px;"
+                            alt=""></div>
+                </div>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <h1 data-aos="fade-left">Graphic Design</h1>
+        </div>
+    </div>
+    <!-- --------------------------------hero----------------------------- -->
+    <!-- -------------------------------branding-services-section---------------------- -->
+    <div class="branding-services-section">
+        <div class="path-url">
+            <span>
+                <a href="../index.html" data-aos="fade-in" data-aos-duration="400">Home</a>
+                <span data-aos="fade-in" data-aos-duration="400">/</span>
+                <a href="./service.html" data-aos="fade-in" data-aos-duration="600">Services</a>
+                <span data-aos="fade-in" data-aos-duration="600">/</span>
+                <a href="" data-aos="fade-in" data-aos-duration="800">Design</a>
+                <span data-aos="fade-in" data-aos-duration="800">/</span>
+                <a href="" data-aos="fade-in" data-aos-duration="1000">Graphic Design</a>
+            </span>
+        </div>
+        <div class="branding-services-content-wrapper">
+            <h1 data-aos="fade-up">Branding Services <br>Dubai</h1>
+            <p data-aos="fade-up">Building a brand identity that is unique to your business helps the right customers
+                get attracted to your
+                products and services.</p>
+            <p style="margin-top: 1rem;" data-aos="fade-up">Our team of skilled in- house brand strategists make sure to
+                understand your
+                business and then create a brand positioning campaign that fits your business needs.</p>
+            <button data-aos="fade-up">Let’s Talk <img src="../Images/red-Arrow.png" alt=""></button>
+        </div>
+    </div>
+    <!-- -------------------------------branding-services-section---------------------- -->
+    <!-- ---------------------------------field-of-expertise-section------------------------ -->
+    <div class="field-of-expertice-section">
+        <h1 data-aos="fade-up">Fields of Expertise</h1>
+        <div class="container-fluid">
+            <div class="row feild-of-exprts-card-wrapper">
+                <div class="col-lg-4 col-md-6 col-sm-12 field-exprt-card" data-aos="fade-left" data-aos-duration="600">
+                    <img src="../Images/Pen Tool.svg" alt="" class="exprt-img1">
+                    <h4>Logo Design</h4>
+                    <p>Our company specializes in making customized and unique logo designs created by top logo
+                        designers in the industry. We create premium logos that help your brand attract the attention of
+                        more customers.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 field-exprt-card" data-aos="fade-left" data-aos-duration="1200">
+                    <img src="../Images/Cup.svg" alt="" class="exprt-img2">
+                    <h4>Packing Design</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 field-exprt-card" data-aos="fade-left" data-aos-duration="1800">
+                    <img src="../Images/Brochure.svg" alt="" class="exprt-img3">
+                    <h4>Brochure Design</h4>
+                    <p>We offer professional brochure design services to types of startups and established businesses.
+                        We design creative and innovative brochures that make a long lasting impression on the
+                        customers.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 field-exprt-card" data-aos="fade-left" data-aos-duration="600">
+                    <img src="../Images/not-brand.svg" alt="" class="exprt-img4">
+                    <h4>Content Strategy</h4>
+                    <p>Our focus remains in developing a successful content strategy to attract and engage the target
+                        audience for the effective growth of your business. We help organizations meet their business
+                        goals with the best user-friendly content.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 field-exprt-card" data-aos="fade-left" data-aos-duration="1200">
+                    <img src="../Images/Brand.svg" alt="" class="exprt-img5">
+                    <h4>Brand Naming</h4>
+                    <p>We create brand names which are unique, attractive and represent your brand in the world market.
+                        True to the nature of your business, your brand names should be catchy yet reflect what your
+                        company does.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------field-of-expertise-section------------------------ -->
+    <!-- -----------------------------------fourth-section------------------------------ -->
+    <div class="fourth-section-wrapper">
+        <h1 data-aos="fade-up">We strategically position your brand as
+            a top-tier organization within your
+            industry.</h1>
+        <p data-aos="fade-up">Today Advertising trends have changed drastically. By positioning itself as a
+            comprehensive Online
+            Advertising agency in Dubai, Lampmedia Tech collaborates with its customers to create targeted digital
+            advertising strategies to optimize the messaging to the relevant target audience.</p>
+        <button data-aos="fade-up">Explore all Branding <img src="../Images/red-Arrow.png" alt=""></button>
+    </div>
+    <!-- -----------------------------------fourth-section------------------------------ -->
+    <!-- -------------------------------------fifth-section--------------------------- -->
+    <div class="fifth-section-wrapper">
+        <h1 data-aos="fade-up">Optimize Your Business Growth With <br>
+            a Powerful Brand Positioning Strategy</h1>
+        <div class="row fifth-section-discription-wrapper">
+            <div class="col-lg-6 col-md-6 col-sm-12 fifth-section-para-left">
+                <p data-aos="fade-left" data-aos-duration="1000">Building a Brand is one of the pre-requisites to
+                    creating a favorable image of any Company. Blending
+                    together the elements of Ethos (ethical nature) Pathos (create a connect) and Kronos (in a timely
+                    manner) for every brand building activity, Lamp Media Tech has been successfully in developing the
+                    ultimate Brand building outcome for its customers. Through a series of collaborative interactions
+                    Lamp Media Tech has established itself as the ‘go-to’ Ad Agency in Dubai, that works together with
+                    its customers to build, create and sustain their respective brand identity through innovative and
+                    creative techniques.</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 fifth-section-para-right">
+                <p data-aos="fade-left" data-aos-duration="2000">A combination of strategies through above-the-line,
+                    below-the-line and online media defines the
+                    modality through which Lamp Media Tech aims at creating a Brand Identity for its customers, through
+                    a 360 degree approach. As an established Advertising Company in Dubai, Lamp Media Tech understands
+                    the importance of Online presence through Website Designing, Social Media Marketing and SEO. The
+                    company also specializes in the following areas</p>
+                <p data-aos="fade-left" data-aos-duration="2000" class="fifth-bottom-para">
+                    Brand Identity <br>
+                    Below-the-line Advertising <br>
+                    Above-the-line Advertising <br>
+                    Online Communication Strategy <br>
+                    Visual Media
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------fifth-section--------------------------- -->
+    <!-- ---------------------------------------related-services-section------------------------ -->
+    <div class="related-services-section">
+        <h1 data-aos="fade-up">Related Service</h1>
+        <div class="container-fluid">
+            <div class="row related-services-card-main">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="related-service-card" data-aos="fade-left" data-aos-duration="600">
+                        <div class="related-img"><img src="../Images/schema.jpg" alt=""></div>
+                        <p class="related-service-title">Graphic Design</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="related-service-card" data-aos="fade-left" data-aos-duration="1200">
+                        <div class="related-img"><img src="../Images/serp.jpg" alt=""></div>
+                        <p class="related-service-title">Product & Packaging Design</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="related-service-card" data-aos="fade-left" data-aos-duration="1800">
+                        <div class="related-img"><img src="../Images/web.jpg" alt=""></div>
+                        <p class="related-service-title">UI/UX Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------related-services-section------------------------ -->
+    <!-- ----------------------------------------sixth-section------------------------------- -->
+    <div class="sixth-section-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-5 sixth-section-left">
+                    <div class="product-making-section-card" data-aos="fade-right">
+                        <img src="../Images/faq 1.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 sixth-section-right">
+                    <h1 data-aos="fade-left">Product making for <br>
+                        friendly users</h1>
+                    <div class="collapse-wrapper">
+                        <div class="collapse-container" data-aos="fade-left" data-bs-toggle="collapse" href="#q1"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span>What does brand positioning do for my business?</span>
+                            <img src="../Images/+.svg" alt="" class="toggle-icon">
+                        </div>
+                        <div class="collapse" id="q1">
+                            <div class="card card-body">
+                                Some placeholder content for the collapse component. This panel is hidden by default but
+                                revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+                        <div class="collapse-container" data-aos="fade-left" data-bs-toggle="collapse" href="#q2"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span>What are the branding services that you provide?</span>
+                            <img src="../Images/+.svg" alt="" class="toggle-icon">
+                        </div>
+                        <div class="collapse" id="q2">
+                            <div class="card card-body">
+                                Some placeholder content for the collapse component. This panel is hidden by default but
+                                revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+                        <div class="collapse-container" data-aos="fade-left" data-bs-toggle="collapse" href="#q3"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span>What is the process of brand positioning?</span>
+                            <img src="../Images/+.svg" alt="" class="toggle-icon">
+                        </div>
+                        <div class="collapse" id="q3">
+                            <div class="card card-body">
+                                Some placeholder content for the collapse component. This panel is hidden by default but
+                                revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+                        <div class="collapse-container" data-aos="fade-left" data-bs-toggle="collapse" href="#q4"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span>Does LM Tech provide the best brand positioning service in Dubai?</span>
+                            <img src="../Images/+.svg" alt="" class="toggle-icon">
+                        </div>
+                        <div class="collapse" id="q4">
+                            <div class="card card-body">
+                                Some placeholder content for the collapse component. This panel is hidden by default but
+                                revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+                        <div class="collapse-container" data-aos="fade-left" data-bs-toggle="collapse" href="#q5"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span>How much do you charge for brand positioning?</span>
+                            <img src="../Images/+.svg" alt="" class="toggle-icon">
+                        </div>
+                        <div class="collapse" id="q5">
+                            <div class="card card-body">
+                                Some placeholder content for the collapse component. This panel is hidden by default but
+                                revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------------sixth-section------------------------------- -->
+    <!-- ----------------------------------footer----------------------------- -->
+    <div class="footer-main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h3>Company</h3>
+                    <div class="footer-link-main">
+                        <div class="footer-link"><a href="./about.html">About LMT</a></div>
+                        <div class="footer-link"><a href="./careers.html">Careers</a></div>
+                        <div class="footer-link"><a href="./works.html">Case Studies</a></div>
+                        <div class="footer-link"><a href="./IT-services.html">Platforms</a></div>
+                        <div class="footer-link"><a href="">Our Clients</a></div>
+                        <div class="footer-link"><a href="">Portfolio</a></div>
+                        <div class="footer-link"><a href="./blog.html">Blogs</a></div>
+                        <div class="footer-link"><a href="./contact.html">Contact</a></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h3>E-Commerce</h3>
+                    <div class="footer-link-main">
+                        <div class="footer-link"><a href="">Custom e-Commerce</a></div>
+                        <div class="footer-link"><a href="">Adobe e-Commerce</a></div>
+                        <div class="footer-link"><a href="">Open Cart</a></div>
+                        <div class="footer-link"><a href="">Shopify</a></div>
+                        <div class="footer-link"><a href="">WooCommerce</a></div>
+                        <div class="footer-link"><a href="">Optimizely</a></div>
+                        <div class="footer-link"><a href="">Squarespace</a></div>
+                        <div class="footer-link"><a href="">Ecwid ECommerce</a></div>
+                        <div class="footer-link"><a href="">PrestaShop</a></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h3>Web & App Development</h3>
+                    <div class="footer-link-main">
+                        <div class="footer-link"><a href="">Custom Web Design</a></div>
+                        <div class="footer-link"><a href="">Wordpress Web Design</a></div>
+                        <div class="footer-link"><a href="">B2B & B2C Portal Design</a></div>
+                        <div class="footer-link"><a href="">Web Application Development</a></div>
+                        <div class="footer-link"><a href="">Website Maintenance</a></div>
+                        <div class="footer-link"><a href="">iOS Mobile Application</a></div>
+                        <div class="footer-link"><a href="">Android Mobile Application</a></div>
+                        <div class="footer-link"><a href="">Hybrid Mobile Application</a></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 footer-right">
+                    <h3>Digital Marketing</h3>
+                    <div class="footer-link-main">
+                        <div class="footer-link"><a href="">Social Media Marketing</a></div>
+                        <div class="footer-link"><a href="">Google PPC Ads</a></div>
+                        <div class="footer-link"><a href="">Google Display Ads</a></div>
+                        <div class="footer-link"><a href="">Youtube Video Marketing</a></div>
+                        <div class="footer-link"><a href="">SMS Marketing</a></div>
+                        <div class="footer-link"><a href="">Search Engine Optimization</a></div>
+                        <div class="footer-link"><a href="">Email Marketing</a></div>
+                        <div class="footer-link"><a href="">eCommerce SEO</a></div>
+                        <div class="footer-link"><a href="">eCommerce SMO & SMM</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------footer----------------------------- -->
+    <!-- --------------------------------copy-right-section----------------------------- -->
+    <div class="copy-right-section">
+        <div class="cpy-logo-wrapper">
+            <div class="logo"><img src="../Images/Screenshot 2024-06-09 014020.png" alt=""></div>
+            <div class="scoial-icon">
+                <a href=""> <img src="../Images/facebook-app-symbol.png" alt=""></a>
+                <a href=""> <img src="../Images/twitter.png" alt=""></a>
+                <a href=""> <img src="../Images/instagram (1).png" alt=""></a>
+                <a href=""> <img src="../Images/linkedin (1).png" alt=""></a>
+                <a href=""><img src="../Images/youtube.png" alt=""></a>
+            </div>
+        </div>
+        <div class="cpy-text-main">
+            <div class="cpy-text-left"><span>© 2024 | All rights reserved by LM Tech </span></div>
+            <div class="cpy-text-right">
+                <span>Legal</span>
+                <span>Privacy Policy</span>
+                <span>Cookies</span>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------copy-right-section----------------------------- -->
+
+
+    <script src="../js/common.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1400,
+            once: true
+        });
+    </script>
+</body>
+
+</html>
